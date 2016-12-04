@@ -56,7 +56,7 @@ public class BalanceCheckDialogFragment extends DialogFragment implements View.O
     public void onClick(View v) {
         if (v.getId() == closeButton.getId()) {
             getDialog().dismiss();
-        } else {
+        } else if (v.getId() == balanceCheckButton.getId()) {
             makeCall();
         }
     }

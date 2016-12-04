@@ -16,13 +16,13 @@ public class AppUtil {
         List<BankVO> voList = new ArrayList<>(100);
         BankVO vo = new BankVO("*99*41", "State Bank of India", "sbi.jpg", "", "", "", "", false);
         voList.add(vo);
-        vo = new BankVO("*99*42", " Punjab National Bank", "punjab_national_bank.gif", "", "", "", "", false);
-        voList.add(vo);
         vo = new BankVO("*99*43", "HDFC Bank", "hdfc_bank.jpg", "", "", "", "", false);
         voList.add(vo);
         vo = new BankVO("*99*44", "ICICI Bank", "icici_bank.jpg", "", "", "", "", false);
         voList.add(vo);
         vo = new BankVO("*99*45", "AXIS Bank", "axis_bank.gif", "", "", "", "", false);
+        voList.add(vo);
+        vo = new BankVO("*99*42", " Punjab National Bank", "punjab_national_bank.gif", "", "", "", "", false);
         voList.add(vo);
         vo = new BankVO("*99*46", "Canara Bank", "canara_bank.jpg", "", "", "", "", false);
         voList.add(vo);
