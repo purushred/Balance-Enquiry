@@ -89,6 +89,7 @@ public class BankAdapter extends RecyclerView.Adapter<BankAdapter.MyViewHolder> 
     }
 
     private void handleBankClick(View view) {
+        fragment.initInterstitialAds();
         fragment.checkRuntimePermission((BankVO) view.getTag(view.getId()));
     }
 

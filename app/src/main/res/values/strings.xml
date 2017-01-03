@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Bank Balance Check</string>
+    <string name="app_name">All Bank Balance Check (*99#, USSD, BHIM) App</string>
+    <string name="banner_ad_unit_id">ca-app-pub-7965587014035488/2045015359</string>
+    <string name="interAdUnitId">ca-app-pub-7965587014035488/6614815756</string>
 </resources>

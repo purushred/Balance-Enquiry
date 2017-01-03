@@ -23,8 +23,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 import com.smart.bank.AppUtil;
 import com.smart.bank.MainActivity;
 import com.smart.bank.R;
@@ -50,6 +52,7 @@ public class FavouritesFragment extends CustomFragment {
     private BankVO bankVO;
     private LinearLayout linearLayout;
     private RecyclerView recyclerView;
+    static int adCount;
 
     @Nullable
     @Override
@@ -73,9 +76,27 @@ public class FavouritesFragment extends CustomFragment {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
         type = getArguments().getString("type");
+
         prepareBankData();
+        initInterstitialAds();
         return rootView;
     }
+
+    public void initInterstitialAds() {
+        final InterstitialAd mInterstitialAd = new InterstitialAd(getActivity());
+        mInterstitialAd.setAdUnitId(getString(R.string.interAdUnitId));
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mInterstitialAd.loadAd(adRequest);
+        mInterstitialAd.setAdListener(new AdListener() {
+            public void onAdLoaded() {
+                if (mInterstitialAd.isLoaded()) {
+                    if ((++adCount) % 2 == 0)
+                        mInterstitialAd.show();
+                }
+            }
+        });
+    }
+
 
     @Override
     public void onAttach(Context context) {
@@ -129,7 +150,7 @@ public class FavouritesFragment extends CustomFragment {
         switch (requestCode) {
             case MY_PERMISSIONS_REQUEST_CALL:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(getActivity(), "Call Permission Granted in Fragment", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getActivity(), "Call Permission Granted in Fragment", Toast.LENGTH_SHORT).show();
                     Handler handler = new Handler();
                     handler.post(new Runnable() {
                         @Override

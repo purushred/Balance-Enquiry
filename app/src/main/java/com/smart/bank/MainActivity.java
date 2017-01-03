@@ -9,12 +9,15 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 import com.smart.bank.fragment.FavouritesFragment;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final int MY_PERMISSIONS_REQUEST_CALL = 1;
-
+    static int adCount;
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -51,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 ((FavouritesFragment) getFragment(tab.getPosition())).prepareBankData();
+                initInterstitialAds();
             }
 
             @Override
@@ -73,11 +77,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPageSelected(int position) {
                 ((FavouritesFragment) getFragment(position)).prepareBankData();
+                initInterstitialAds();
             }
 
             @Override
             public void onPageScrollStateChanged(int state) {
 
+            }
+        });
+    }
+
+    private void initInterstitialAds() {
+        final InterstitialAd mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId(getString(R.string.interAdUnitId));
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mInterstitialAd.loadAd(adRequest);
+        mInterstitialAd.setAdListener(new AdListener() {
+            public void onAdLoaded() {
+                if (mInterstitialAd.isLoaded()) {
+                    if ((++adCount) % 3 == 0)
+                        mInterstitialAd.show();
+                }
             }
         });
     }

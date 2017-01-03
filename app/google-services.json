@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "165446312979",
+    "firebase_url": "https://admob-app-id-3940644557.firebaseio.com",
+    "project_id": "admob-app-id-3940644557",
+    "storage_bucket": "admob-app-id-3940644557.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165446312979:android:2f6e0e1d223fe575",
+        "android_client_info": {
+          "package_name": "com.smart.browserhistory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165446312979-de3ff26pcojnddf5jnqqpru2r4g2dle3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtxjgYcXHT-wnrG7Qyt_kBInDsjRex220"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165446312979:android:03e48e01c75fee35",
+        "android_client_info": {
+          "package_name": "com.smart.partyplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165446312979-8bkjjal3j002v22vtkpj5mn5tphd0slo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smart.partyplanner",
+            "certificate_hash": "90B7EF05C79F1319E130704F41F7EBCD6A558C0D"
+          }
+        },
+        {
+          "client_id": "165446312979-de3ff26pcojnddf5jnqqpru2r4g2dle3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtxjgYcXHT-wnrG7Qyt_kBInDsjRex220"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165446312979-de3ff26pcojnddf5jnqqpru2r4g2dle3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165446312979:android:789d99578eb6a140",
+        "android_client_info": {
+          "package_name": "com.smart.bank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165446312979-h4oj6hefljrefnfpmsua811o1h57nb0i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smart.bank",
+            "certificate_hash": "90B7EF05C79F1319E130704F41F7EBCD6A558C0D"
+          }
+        },
+        {
+          "client_id": "165446312979-de3ff26pcojnddf5jnqqpru2r4g2dle3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtxjgYcXHT-wnrG7Qyt_kBInDsjRex220"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165446312979-de3ff26pcojnddf5jnqqpru2r4g2dle3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
