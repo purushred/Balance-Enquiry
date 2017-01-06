@@ -1,5 +1,54 @@
 <resources>
-    <string name="app_name">All Bank Balance Check (*99#, USSD, BHIM) App</string>
+    <string name="app_name">Mongo Pay</string>
     <string name="banner_ad_unit_id">ca-app-pub-7965587014035488/2045015359</string>
     <string name="interAdUnitId">ca-app-pub-7965587014035488/6614815756</string>
+    <string name="accessibility_service_description">Accessibility service description</string>
+    <string name="help_title">Help</string>
+    <string name="help_desc">If you are using this app for the first time, Please follow the below steps to setup your bank a/c.\n\n
+        1.) Set your preferred language by dialing *99*1# from your phone dial pad.\n
+        2.) Make sure that your mobile number is registered with any of the following banks.\n\n
+            \tSupported Banks:\n
+\n\t\t* Allahabad Bank
+\n\t\t* Andhra Bank
+\n\t\t* Axis Bank
+\n\t\t* Bank of Baroda
+\n\t\t* Bank of India
+\n\t\t* Bank of Maharashtra
+\n\t\t* Canara Bank
+\n\t\t* Catholic Syrian Bank
+\n\t\t* Central Bank of India
+\n\t\t* DCB Bank
+\n\t\t* Dena Bank
+\n\t\t* Federal Bank
+\n\t\t* HDFC Bank
+\n\t\t* ICICI Bank
+\n\t\t* IDBI Bank
+\n\t\t* IDFC Bank
+\n\t\t* Indian Bank
+\n\t\t* Indian Overseas Bank
+\n\t\t* IndusInd Bank
+\n\t\t* Karnataka Bank
+\n\t\t* Karur Vysya Bank
+\n\t\t* Kotak Mahindra Bank
+\n\t\t* Oriental Bank of Commerce
+\n\t\t* Punjab National Bank
+\n\t\t* RBL Bank
+\n\t\t* South Indian Bank
+\n\t\t* Standard Chartered Bank
+\n\t\t* State Bank of India
+\n\t\t* Syndicate Bank
+\n\t\t* TJSB
+\n\t\t* UCO Bank
+\n\t\t* Union Bank of India
+\n\t\t* United Bank of India
+\n\t\t* Vijaya Bank
+\n\t\t* Yes Bank Ltd
+    \n3.) If your mobile number is not registered, Then please contact your bank to get it done.\n
+      4.) If you are done with the above setup, Then starting using this app to do the following activities.
+        \n\t\t* Check your A/C details
+        \n\t\t* Balance Check
+        \n\t\t* Transfer Funds
+        \n\t\t* Receive funds.
+
+    </string>
 </resources>
